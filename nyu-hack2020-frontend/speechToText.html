@@ -94,6 +94,7 @@
         padding: 0;
     }
 </style>
+<a href="./index.html">Return to Home Page</a>
 <h1 class="center" id="headline">
     <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
         Web Speech API</a> Demonstration</h1>
@@ -305,6 +306,7 @@
                     if (interim_transcript.includes("open barcode")) {
                         window.location.href = "./barcode.html";
                     }
+
                 }
             }
             final_transcript = capitalize(final_transcript);
@@ -409,14 +411,14 @@
         start_timestamp = event.timeStamp;
     }
 
-    final_transcript = '';
-    recognition.lang = select_dialect.value;
-    recognition.start();
-    ignore_onend = false;
-    final_span.innerHTML = '';
-    interim_span.innerHTML = '';
-    start_img.src = 'mic-slash.gif';
-    showInfo('info_allow');
-    showButtons('none');
-    start_timestamp = event.timeStamp;
+    // final_transcript = '';
+    // recognition.lang = select_dialect.value;
+    // recognition.start();
+    // ignore_onend = false;
+    // final_span.innerHTML = '';
+    // interim_span.innerHTML = '';
+    // start_img.src = 'mic-slash.gif';
+    // showInfo('info_allow');
+    // showButtons('none');
+    // // start_timestamp = event.timeStamp;
 </script>
